@@ -1,0 +1,30 @@
+main {
+    height: 500px;
+    background-color: #d7d4d7;
+    font-family: "Josefin Slab", sans-serif;
+}
+
+main h1 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #11110f;
+}
+
+main h4 {
+    font-family: "Anta", sans-serif;
+    font-size: 18px;
+    color: rgb(7, 7, 43);
+}
+
+.profile_photo {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
