@@ -1,6 +1,7 @@
 import "./Hero.css";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import ProfilePhoto from "/public/assets/peter.jpeg";
 const Hero = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const Hero = () => {
         </div>
         <div className="">
           <img
-            src="/public/assets/peter.jpeg"
+            src={ProfilePhoto}
             alt="peter-photo"
             className="profile_photo py-6"
           />
