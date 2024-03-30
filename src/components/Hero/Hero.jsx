@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
         <div className="">
           <img
-            src="/assets/peter.jpeg"
+            src="/public/assets/peter.jpeg"
             alt="peter-photo"
             className="profile_photo py-6"
           />
