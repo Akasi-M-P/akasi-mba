@@ -15,10 +15,48 @@ nav {
     backdrop-filter: blur(5px);
     border: 1px solid rgba(221, 213, 213, 0.3);
     font-family: "Josefin Slab", sans-serif;
+    position: fixed;
+    z-index: 2;
+    left: 40px;
 }
 
 .nav-link {
     border: transparent;
     padding: 4px;
     border-radius: 15px;
+}
+
+
+/*  640-768    - tablet landscape */
+@media all and (min-width: 640px) and (max-width: 768px) {
+
+nav {
+    font-size: 20px;
+}
+
+ nav a:hover{
+      
+    color: rgb(68, 161, 215);
+
+    }
+}
+
+
+/* 1024-768    - Desktop landscape */
+/* @media all and (min-width: 769px) and (max-width: 1024px) { 
+    nav {
+    font-size: 24px;
+}
+} */
+
+@media all and (min-width: 1025px) and (max-width: 2000px) { 
+    nav {
+    font-size: 24px;
+}
+
+    nav a:hover{
+      
+    color: rgb(68, 161, 215);
+
+    }
 }

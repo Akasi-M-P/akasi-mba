@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redressed&family=Roboto:wght@400;500;700;900&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redressed&family=Roboto:wght@400;500;700;900&family=Yellowtail&display=swap');
 
 
 @tailwind base;
@@ -9,5 +9,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #d7d4d7;
 }
 

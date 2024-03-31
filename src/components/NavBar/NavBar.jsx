@@ -4,9 +4,9 @@ const NavBar = () => {
   return (
     <>
       <header className="w-full flex items-center py-5">
-        <nav className="w-4/5 m-auto px-2 py-2 ">
+        <nav className="w-4/5 md:w-2/4 m-auto px-2 py-2 lg:px-6">
           <div className="nav-link">
-            <a href="">About</a>
+            <a href="hover">About</a>
           </div>
           <div className="nav-link">
             <a href="">Projects</a>

@@ -1,12 +1,12 @@
 import "./Hero.css";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import ProfilePhoto from "/public/assets/peter.jpeg";
+import ProfilePhoto from "/assets/peter.jpeg";
 const Hero = () => {
   return (
     <>
       <main className="">
-        <div className="">
+        <div className="hero-box">
           <h1 className="text-center py-4">
             Hi. I’m Peter. A Frontend Engineer.
           </h1>
@@ -15,27 +15,37 @@ const Hero = () => {
             centric.
           </h4>
         </div>
-        <div className="">
+        <div className="hero-box">
           <img
             src={ProfilePhoto}
             alt="peter-photo"
             className="profile_photo py-6"
           />
           <div className="social-icons">
-            <div data-aos="flip-left">
-              <FaGithub className="text-3xl" />
+            <div>
+              <a href="">
+                <FaGithub className="icon text-5xl" />
+              </a>
             </div>
-            <div data-aos="flip-left">
-              <FaLinkedin className="text-3xl" />
+            <div>
+              <a href="">
+                <FaLinkedin className="icon text-5xl" />
+              </a>
             </div>
-            <div data-aos="flip-left">
-              <FaXTwitter className="text-3xl" />
+            <div>
+              <a href="">
+                <FaXTwitter className="icon text-5xl" />
+              </a>
             </div>
-            <div data-aos="flip-left">
-              <FaInstagram className="text-3xl" />
+            <div>
+              <a href="">
+                <FaInstagram className="icon text-5xl" />
+              </a>
             </div>
-            <div data-aos="flip-left">
-              <FaWhatsapp className="text-3xl" />
+            <div>
+              <a href="">
+                <FaWhatsapp className="icon text-5xl" />
+              </a>
             </div>
           </div>
         </div>
