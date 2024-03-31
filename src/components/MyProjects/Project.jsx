@@ -16,7 +16,7 @@ const Project = ({ project }) => {
         </div>
         <div className="project-links py-2">
           <div className="project-live project-link-hover">
-            <a href={project.live} className="link-icon">
+            <a href={project.live} className="link-icon" target="blank">
               Live
               <span>
                 <SiYoutubeshorts />
@@ -24,7 +24,7 @@ const Project = ({ project }) => {
             </a>
           </div>
           <div className="project-github project-link-hover">
-            <a href={project.github} className="link-icon">
+            <a href={project.github} className="link-icon" target="blank">
               GitHub
               <span>
                 <FaGithub />

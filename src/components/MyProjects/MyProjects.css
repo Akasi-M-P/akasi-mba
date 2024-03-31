@@ -1,9 +1,12 @@
 .projects {
     background-color: #0e0408;
+}
+
+.projects-container {
+    background-color: #0e0408;
     padding-top: 50px;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
     row-gap: 40px;
 }
 
@@ -75,4 +78,100 @@
     padding: 8px 30px;
     border-radius: 10px;
     color: #2766a8;
+}
+
+
+
+/*  640-768    - tablet landscape */
+@media all and (min-width: 768px) and (max-width: 1024px ) {
+
+.project-container {
+    width: 50%;
+}
+
+.projects-header {
+    font-size: 32px;
+}
+
+.project-title-img-des img {
+    border-radius: 5px;
+}
+
+.project-title {
+    font-family: "Anta";
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.project-des {
+    font-size: 18px;
+}
+
+.project-links {
+    display: flex;
+    column-gap: 20px;
+    font-family: "Anta", sans-serif;
+    letter-spacing: 1px;
+}
+
+.project-live {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+}
+
+
+@media all and (min-width: 1025px) and (max-width: 1280px) {
+
+.projects-container {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+}
+
+.project-container {
+    width: 80%;
+}
+}
+
+
+@media all and (min-width: 1281px) {
+.projects {
+    background-color: #0e0408;
+    margin-top: 5rem;
+}
+
+.projects-container {
+    background-color: #0e0408;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+}
+
+.project-container {
+    width: 80%;
+}
+
+.projects-header {
+    font-size: 32px;
+}
+
+.project-title-img-des {
+    font-family: "Josefin Slab", sans-serif;
+}
+
+.project-title-img-des img {
+    border-radius: 5px;
+}
+
+.project-title {
+    font-family: "Anta";
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.project-des {
+    font-size: 20px;
+}
 }
