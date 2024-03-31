@@ -4,7 +4,11 @@ import { SiYoutubeshorts } from "react-icons/si";
 const Project = ({ project }) => {
   return (
     <>
-      <div className="project-container">
+      <div
+        className="project-container"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div className="project-title-img-des">
           <img src={project.img} alt={project.title} />
           <h1 className="project-title">{project.title}</h1>
