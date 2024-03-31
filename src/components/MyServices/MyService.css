@@ -1,0 +1,33 @@
+.service {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service-title {
+    font-family: "Anta";
+}
+
+.service-des {
+    font-family: "Josefin Slab";
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.service-icon {
+    border: 1px solid rgb(164, 145, 145);
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.service-icon img {
+    width: 50px;
+}
+
+.service-icon-des {
+    align-items: center;
+    column-gap: 15px;
+}

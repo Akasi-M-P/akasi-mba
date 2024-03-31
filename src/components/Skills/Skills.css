@@ -23,10 +23,97 @@
     background: rgba(240, 235, 232, 0.24);
     border-radius: 16px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-    backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     border: 1px solid rgba(197, 183, 177, 0.19);
     margin: auto;
     box-shadow: rgba(75, 217, 242, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
 }
 
+.skill h1 {
+    display: none;
+}
+
+/*  640-768    - tablet landscape */
+@media all and (min-width: 640px) and (max-width: 768px) {
+    .skills {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+}
+
+.skill {
+    width: 200px;
+    padding: 10px 0;
+    margin: auto;
+}
+
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    .skills {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+}
+
+    .skill {
+        width: 280px;
+        padding: 10px 0;
+        margin: auto;
+}
+
+.skill:hover {
+    border-radius: 100%;
+    background-color: beige;
+}
+
+.skill-header {
+    background-color: #29131a;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-family: "Anta";
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 28px;
+}
+
+.skill h1 {
+    display: block;
+}
+}
+
+
+@media all and (min-width: 1281px) {
+    .skills {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 40px;
+}
+
+    .skill {
+        width: 300px;
+}
+
+.skill:hover {
+    border-radius: 100%;
+    background-color: beige;
+}
+
+.skill-header {
+    font-size: 32px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.skill h1 {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+ }

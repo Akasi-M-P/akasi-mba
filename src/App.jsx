@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar/NavBar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Skills from "./components/Skills/Skills";
+import Services from "./components/MyServices/Services";
 
 function App() {
   useEffect(() => {
@@ -12,11 +13,10 @@ function App() {
   }, []);
   return (
     <>
-      <>
-        <NavBar />
-        <Hero />
-        <Skills />
-      </>
+      <NavBar />
+      <Hero />
+      <Skills />
+      <Services />
     </>
   );
 }
