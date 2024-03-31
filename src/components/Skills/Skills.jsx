@@ -11,28 +11,28 @@ const Skills = () => {
         <h1 className="text-white text-center">Skills</h1>
       </div>
       <div className="skills">
-        <div className="skill">
+        <div data-aos="flip-up" className="skill">
           <FaHtml5 className="text-6xl text-orange-600 mx-auto" />
         </div>
-        <div className="skill">
+        <div data-aos="flip-up" className="skill">
           <IoLogoCss3 className="text-6xl text-blue-600 mx-auto" />
         </div>
-        <div className="skill">
+        <div data-aos="flip-up" className="skill">
           <RiJavascriptFill className="text-6xl text-yellow-500 mx-auto" />
         </div>
-        <div className="skill">
+        <div data-aos="flip-up" className="skill">
           <FaSass className="text-6xl text-pink-600 mx-auto" />
         </div>
-        <div className="skill">
+        <div data-aos="flip-up" className="skill">
           <FaReact className="text-6xl text-blue-400 mx-auto" />
         </div>
-        <div className="skill">
+        <div data-aos="flip-up" className="skill">
           <SiTailwindcss className="text-6xl text-blue-400 mx-auto" />
         </div>
-        <div className="skill">
-          <FaBootstrap className="text-6xl text-blue-400 mx-auto" />
+        <div data-aos="flip-up" className="skill">
+          <FaBootstrap className="text-6xl text-purple-500 mx-auto" />
         </div>
-        <div className="skill">
+        <div data-aos="flip-up" className="skill">
           <FaFigma className="text-6xl text-fuchsia-500 mx-auto" />
         </div>
       </div>
