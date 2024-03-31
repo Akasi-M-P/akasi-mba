@@ -23,27 +23,30 @@ const Hero = () => {
           />
           <div className="social-icons">
             <div>
-              <a href="">
+              <a href="https://github.com/Akasi-M-P" target="blank">
                 <FaGithub className="icon text-5xl" />
               </a>
             </div>
             <div>
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/peter-akasi-mba/"
+                target="blank"
+              >
                 <FaLinkedin className="icon text-5xl" />
               </a>
             </div>
             <div>
-              <a href="">
+              <a href="" target="blank">
                 <FaXTwitter className="icon text-5xl" />
               </a>
             </div>
             <div>
-              <a href="">
+              <a href="" target="blank">
                 <FaInstagram className="icon text-5xl" />
               </a>
             </div>
             <div>
-              <a href="">
+              <a href="https://wa.me/+233241899029" target="blank">
                 <FaWhatsapp className="icon text-5xl" />
               </a>
             </div>

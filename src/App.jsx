@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Skills from "./components/Skills/Skills";
 import Services from "./components/MyServices/Services";
 import Projects from "./components/MyProjects/Projects";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       <Skills />
       <Services />
       <Projects />
+      <Footer />
     </>
   );
 }
