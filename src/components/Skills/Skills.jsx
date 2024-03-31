@@ -7,7 +7,7 @@ import { SiTailwindcss } from "react-icons/si";
 const Skills = () => {
   return (
     <>
-      <div className="skill-header py-4">
+      <div className="skill-header py-4 mt-10">
         <h1 className="text-white text-center">Skills</h1>
       </div>
       <div className="skills">
