@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Audiophile",
     "img": "/assets/audiophile.png",
-    "description": "I developed an Audiophile ecommerce web app using HTML5, CSS3, JavaScript, and React. The platform offers a wide range of high-quality audio products for enthusiasts. Implementing user-friendly features and a seamless checkout process, the app improved customer satisfaction and conversion rates, leading to increased sales and user engagement.",
+    "description": "I developed an Audiophile ecommerce web app using HTML5, CSS3, JavaScript, and React. The platform offers a wide range of high-quality audio products for enthusiasts. Implemented user-friendly features and a seamless checkout process.",
     "github": "https://github.com/Akasi-M-P/audiophile_ecommerce",
     "live": "https://audiophile-ecommerce-akasi-m-p.vercel.app/"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "Countries Application",
     "img": "/assets/countriesapp.png",
-    "description": "I created a countries app using HTML5, CSS3, JavaScript, and React. This app enables users to search for countries and view detailed information such as population, capital, and currency. With a user-friendly interface and interactive features, it provides an engaging experience for exploring countries around the world.",
+    "description": "I created a countries app using HTML5, CSS3, JavaScript, and React. This app enables users to search for countries and view detailed information such as population, capital, and currency.",
     "github": "https://github.com/Akasi-M-P/countries-web-application",
     "live": "https://countries-web-application.vercel.app/"
   },
