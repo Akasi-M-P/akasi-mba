@@ -1,5 +1,5 @@
 .footer {
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,4 +39,90 @@
     font-family: "Josefin Slab", sans-serif;
     font-weight: 400;
     font-size: 14px;
+}
+
+/*  640-768    - tablet landscape */
+@media all and (min-width: 768px) and (max-width: 1024px ) {
+
+.footer-header {
+    font-family: "Anta", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+
+.footer-nav {
+    height: 150px;
+    background-color: #0e0408;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 50px;
+}
+
+
+.nav-link {
+    font-family: "Josefin Slab", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.copy-rights {
+    font-family: "Josefin Slab", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+}
+
+
+@media all and (min-width: 1025px) and (max-width: 1280px) {
+    .footer-header {
+    font-family: "Anta", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+
+
+.nav-link {
+    font-family: "Josefin Slab", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.copy-rights {
+    font-family: "Josefin Slab", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+}
+
+
+@media all and (min-width: 1281px) { 
+    .footer-header {
+    font-family: "Anta", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+
+
+.nav-link {
+    font-family: "Josefin Slab", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.copy-rights {
+    font-family: "Josefin Slab", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 }

@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <h1 className="footer-header py-4">Get In Touch</h1>
         </div>
-        <div className="social-icons">
+        <div className="social-icons flex gap-12">
           <div>
             <a href="https://github.com/Akasi-M-P" target="blank">
               <FaGithub className="icon text-5xl" />
@@ -42,8 +42,8 @@ const Footer = () => {
       </div>
       <div>
         <div className="footer-nav">
-          <div className="flex flex-row">
-            <div className=" nav-link">
+          <div className="flex flex-row gap-10">
+            <div className="nav-link">
               <a href="#about">About</a>
             </div>
             <div className="nav-link">
