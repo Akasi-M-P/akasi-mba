@@ -5,7 +5,7 @@ import ProfilePhoto from "/assets/peter.jpeg";
 const Hero = () => {
   return (
     <>
-      <main className="">
+      <main className="" id="about">
         <div className="hero-box">
           <h1 className="text-center py-4">
             Hi. I’m Peter. A Frontend Engineer.

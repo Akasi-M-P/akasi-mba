@@ -4,7 +4,7 @@ import projects from "/src/ProjectsData.json";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div>
         <h1 className="projects-header text-white py-8 text-center">
           Projects
