@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Audiophile",
+    "img": "/assets/audiophile.png",
+    "description": "I developed an Audiophile ecommerce web app using HTML5, CSS3, JavaScript, and React. The platform offers a wide range of high-quality audio products for enthusiasts. Implementing user-friendly features and a seamless checkout process, the app improved customer satisfaction and conversion rates, leading to increased sales and user engagement.",
+    "github": "https://github.com/Akasi-M-P/audiophile_ecommerce",
+    "live": "https://audiophile-ecommerce-akasi-m-p.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "Dictionary",
+    "img": "/assets/dictionaryapp.png",
+    "description": "I created a dictionary web app with HTML5, CSS3, and JavaScript, providing access to 150,000+ words. The app includes audio pronunciation and guides, improving language learning and boosting user engagement. ",
+    "github": "https://github.com/Akasi-M-P/web-dictionary-app",
+    "live": "https://web-dictionary-app-tawny.vercel.app/"
+  },
+  {
+    "id": 3,
+    "title": "Countries Application",
+    "img": "/assets/countriesapp.png",
+    "description": "I created a countries app using HTML5, CSS3, JavaScript, and React. This app enables users to search for countries and view detailed information such as population, capital, and currency. With a user-friendly interface and interactive features, it provides an engaging experience for exploring countries around the world.",
+    "github": "https://github.com/Akasi-M-P/countries-web-application",
+    "live": "https://countries-web-application.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "GitHub User Finder",
+    "img": "/assets/gitHubUser.png",
+    "description": "I developed a GitHub user finder app using HTML5, CSS3, JavaScript, and React. The app allows users to search for GitHub profiles and view repositories. With a user-friendly interface and real-time search, it simplifies the discovery of GitHub users and their work.",
+    "github": "https://github.com/Akasi-M-P/github-user",
+    "live": "https://github-user-amber.vercel.app/"
+  }
+]

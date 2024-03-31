@@ -8,9 +8,11 @@ const Services = () => {
       <div>
         <h1 className="service-header text-center pt-8">Services</h1>
       </div>
-      {services.map((service) => (
-        <Service service={service} key={service.id} />
-      ))}
+      <div className="service-container">
+        {services.map((service) => (
+          <Service service={service} key={service.id} />
+        ))}
+      </div>
     </div>
   );
 };

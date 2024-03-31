@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Skills from "./components/Skills/Skills";
 import Services from "./components/MyServices/Services";
+import Projects from "./components/MyProjects/Projects";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <Skills />
       <Services />
+      <Projects />
     </>
   );
 }

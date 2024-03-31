@@ -1,0 +1,78 @@
+.projects {
+    background-color: #0e0408;
+    padding-top: 50px;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.project-container {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+    background: rgba(240, 235, 232, 0.24);
+    border-radius: 16px;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(197, 183, 177, 0.19);
+}
+
+.projects-header {
+    font-size: 28px;
+    font-family: "Anta", sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.project-title-img-des {
+    font-family: "Josefin Slab", sans-serif;
+}
+
+.project-title-img-des img {
+    border-radius: 5px;
+}
+
+.project-title {
+    font-family: "Anta";
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.project-des {
+    font-size: 16px;
+}
+
+.project-links {
+    display: flex;
+    column-gap: 20px;
+    font-family: "Anta", sans-serif;
+    letter-spacing: 1px;
+}
+
+.project-live {
+    border: 1px solid #fff;
+    padding: 8px 30px;
+    border-radius: 10px;
+}
+
+.project-github {
+    border: 1px solid #fff;
+    padding: 8px 30px;
+    border-radius: 10px;
+}
+
+.link-icon {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.project-link-hover:hover {
+    border: 1px solid #2766a8;
+    padding: 8px 30px;
+    border-radius: 10px;
+    color: #2766a8;
+}
