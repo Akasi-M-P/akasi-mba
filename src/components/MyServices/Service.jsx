@@ -2,7 +2,7 @@
 const Service = ({ service }) => {
   return (
     <>
-      <div className="service">
+      <div className="service" data-aos="fade-up" data-aos-duration="3000">
         <div className="service-icon-des flex">
           <div className="service-icon">
             <img src={service.img} alt="" />
