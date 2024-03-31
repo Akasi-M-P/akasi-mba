@@ -12,7 +12,12 @@ const Footer = () => {
         <div className="social-icons flex lg:gap-12">
           <div>
             <a href="https://github.com/Akasi-M-P" target="blank">
-              <FaGithub className="icon text-5xl" />
+              <FaGithub
+                className="icon text-5xl"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              />
             </a>
           </div>
           <div>
@@ -20,22 +25,42 @@ const Footer = () => {
               href="https://www.linkedin.com/in/peter-akasi-mba/"
               target="blank"
             >
-              <FaLinkedin className="icon text-5xl" />
+              <FaLinkedin
+                className="icon text-5xl"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              />
             </a>
           </div>
           <div>
             <a href="" target="blank">
-              <FaXTwitter className="icon text-5xl" />
+              <FaXTwitter
+                className="icon text-5xl"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              />
             </a>
           </div>
           <div>
             <a href="" target="blank">
-              <FaInstagram className="icon text-5xl" />
+              <FaInstagram
+                className="icon text-5xl"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              />
             </a>
           </div>
           <div>
             <a href="https://wa.me/+233241899029" target="blank">
-              <FaWhatsapp className="icon text-5xl" />
+              <FaWhatsapp
+                className="icon text-5xl"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              />
             </a>
           </div>
         </div>
