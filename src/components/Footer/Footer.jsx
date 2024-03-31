@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <h1 className="footer-header py-4">Get In Touch</h1>
         </div>
-        <div className="social-icons flex gap-12">
+        <div className="social-icons flex lg:gap-12">
           <div>
             <a href="https://github.com/Akasi-M-P" target="blank">
               <FaGithub className="icon text-5xl" />
