@@ -92,22 +92,61 @@
   height: 2px;
   background-color: var(--color-text-dark);
   border-radius: 2px;
-  transition: background-color var(--transition-base);
+  transition:
+    transform 250ms ease,
+    opacity 250ms ease,
+    background-color var(--transition-base);
 }
 
 .navbar-hamburger:hover span {
   background-color: var(--color-accent);
 }
 
+/* ─── Open state → X ─────────────────────────────────────── */
+.navbar-hamburger--open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-hamburger--open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.navbar-hamburger--open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ─── Mobile dropdown ────────────────────────────────────── */
 .navbar-mobile {
   display: flex;
   flex-direction: column;
-  padding: 8px 24px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
   gap: 4px;
+  overflow: hidden;
+  /* collapsed state */
+  max-height: 0;
+  padding: 0 24px;
+  opacity: 0;
+  transform: translateY(-8px);
+  border-top: 1px solid transparent;
+  pointer-events: none;
+  transition:
+    max-height 320ms ease,
+    padding    320ms ease,
+    opacity    220ms ease,
+    transform  220ms ease,
+    border-color 220ms ease;
 }
 
+.navbar-mobile--open {
+  max-height: 420px;
+  padding: 8px 24px 20px;
+  opacity: 1;
+  transform: translateY(0);
+  border-top-color: rgba(255, 255, 255, 0.07);
+  pointer-events: auto;
+}
+
+/* ─── Link styles ────────────────────────────────────────── */
 .navbar-mobile-link {
   font-family: var(--font-body);
   font-weight: 600;
@@ -124,10 +163,24 @@
 }
 
 .navbar-mobile-cta {
-  display: flex;
-  justify-content: center;
   margin-top: 12px;
 }
+
+/* ─── Staggered entrance for each item ───────────────────── */
+@keyframes mobile-link-in {
+  from { opacity: 0; transform: translateX(-10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.navbar-mobile--open > * {
+  animation: mobile-link-in 200ms ease both;
+}
+
+.navbar-mobile--open > *:nth-child(1) { animation-delay:  60ms; }
+.navbar-mobile--open > *:nth-child(2) { animation-delay: 110ms; }
+.navbar-mobile--open > *:nth-child(3) { animation-delay: 160ms; }
+.navbar-mobile--open > *:nth-child(4) { animation-delay: 210ms; }
+.navbar-mobile--open > *:nth-child(5) { animation-delay: 260ms; }
 
 /* ─── Tablet and up: show desktop nav, hide hamburger ───── */
 @media (min-width: 768px) {

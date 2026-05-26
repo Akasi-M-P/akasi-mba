@@ -28,7 +28,7 @@ const NavBar = () => {
 
         {/* Mobile hamburger */}
         <button
-          className="navbar-hamburger"
+          className={`navbar-hamburger${menuOpen ? " navbar-hamburger--open" : ""}`}
           aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={menuOpen}
           aria-controls="mobile-nav"
@@ -40,18 +40,21 @@ const NavBar = () => {
         </button>
       </div>
 
-      {/* Mobile dropdown */}
-      {menuOpen && (
-        <nav id="mobile-nav" className="navbar-mobile" aria-label="Mobile navigation">
-          <a href="#about"    className="navbar-mobile-link" onClick={closeMenu}>About</a>
-          <a href="#skills"   className="navbar-mobile-link" onClick={closeMenu}>Skills</a>
-          <a href="#projects" className="navbar-mobile-link" onClick={closeMenu}>Projects</a>
-          <a href="#contact"  className="navbar-mobile-link" onClick={closeMenu}>Contact</a>
-          <a href="#contact"  className="btn btn-primary navbar-mobile-cta" onClick={closeMenu}>
-            Hire Me
-          </a>
-        </nav>
-      )}
+      {/* Mobile dropdown — always rendered, animated via CSS */}
+      <nav
+        id="mobile-nav"
+        className={`navbar-mobile${menuOpen ? " navbar-mobile--open" : ""}`}
+        aria-label="Mobile navigation"
+        aria-hidden={!menuOpen}
+      >
+        <a href="#about"    className="navbar-mobile-link" onClick={closeMenu}>About</a>
+        <a href="#skills"   className="navbar-mobile-link" onClick={closeMenu}>Skills</a>
+        <a href="#projects" className="navbar-mobile-link" onClick={closeMenu}>Projects</a>
+        <a href="#contact"  className="navbar-mobile-link" onClick={closeMenu}>Contact</a>
+        <a href="#contact"  className="btn btn-primary navbar-mobile-cta" onClick={closeMenu}>
+          Hire Me
+        </a>
+      </nav>
     </header>
   );
 };

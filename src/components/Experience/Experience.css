@@ -1,7 +1,13 @@
 /* ─── Section ────────────────────────────────────────────── */
 .experience {
   background-color: var(--color-bg-dark);
-  padding: 96px 24px;
+  padding: 80px 16px;
+}
+
+@media (min-width: 640px) {
+  .experience {
+    padding: 96px 24px;
+  }
 }
 
 .experience-inner {
@@ -91,8 +97,14 @@
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius-lg);
-  padding: 20px 20px 24px;
+  padding: 16px 14px 20px;
   transition: border-color var(--transition-base);
+}
+
+@media (min-width: 640px) {
+  .timeline-card {
+    padding: 20px 20px 24px;
+  }
 }
 
 .timeline-card:hover {
