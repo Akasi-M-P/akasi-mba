@@ -8,16 +8,18 @@ const Hero = () => {
   return (
     <section className="hero" id="about" aria-labelledby="hero-name">
       <div className="hero-inner">
-
         {/* ── Text column ── */}
         <div className="hero-text">
-          <span className="section-label">Full-Stack Developer · AWS Certified Cloud Practitioner</span>
+          <span className="section-label">
+            Full-Stack Web Developer · AWS Certified Cloud Practitioner
+          </span>
           <h1 className="hero-name" id="hero-name">
             Hi, I'm Peter Mba Akasi.
           </h1>
           <p className="hero-tagline">
             I build scalable, cloud-aware web applications end-to-end — from
-            pixel-perfect React frontends to Node.js APIs and AWS infrastructure.
+            pixel-perfect React frontends to Node.js APIs and AWS
+            infrastructure.
           </p>
 
           <div className="hero-ctas">
@@ -40,7 +42,7 @@ const Hero = () => {
               <FaGithub aria-hidden="true" />
             </a>
             <a
-              href="https://www.linkedin.com/in/peter-akasimba/"
+              href="https://www.linkedin.com/in/peter-akasi-mba/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn profile"
@@ -53,12 +55,11 @@ const Hero = () => {
               then remove the social-icon--disabled class and tabIndex/aria-hidden.
             */}
             <a
-              href="https://twitter.com/"
+              href="https://x.com/Awinbisa1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter/X profile (coming soon)"
-              className="social-icon social-icon--disabled"
-              tabIndex="-1"
+              className="social-icon "
               aria-hidden="true"
             >
               <FaXTwitter aria-hidden="true" />
@@ -85,7 +86,6 @@ const Hero = () => {
             height="400"
           />
         </div>
-
       </div>
     </section>
   );

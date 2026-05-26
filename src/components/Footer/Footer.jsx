@@ -6,7 +6,6 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer id="contact" aria-label="Contact and site footer">
-
       {/* ── Contact section ── */}
       <section className="contact" aria-labelledby="contact-heading">
         <div className="contact-inner">
@@ -21,14 +20,17 @@ const Footer = () => {
 
           <ul className="contact-channels" aria-label="Contact channels">
             <li>
-              <a href="mailto:mbajameel90@gmail.com" className="contact-channel">
+              <a
+                href="mailto:akasipeter925@gmail.com"
+                className="contact-channel"
+              >
                 <FiMail className="channel-icon" aria-hidden="true" />
-                <span>mbajameel90@gmail.com</span>
+                <span>akasipeter925@gmail.com</span>
               </a>
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/peter-akasimba/"
+                href="https://www.linkedin.com/in/peter-akasi-mba/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-channel"
@@ -61,7 +63,7 @@ const Footer = () => {
             </li>
           </ul>
 
-          <a href="mailto:mbajameel90@gmail.com" className="btn btn-primary">
+          <a href="mailto:akasipeter925@gmail.com" className="btn btn-primary">
             Send Me a Message
           </a>
         </div>
@@ -71,13 +73,23 @@ const Footer = () => {
       <div className="footer-bar">
         <div className="footer-bar-inner">
           <nav className="footer-nav" aria-label="Footer navigation">
-            <a href="#about"    className="footer-nav-link">About</a>
-            <a href="#skills"   className="footer-nav-link">Skills</a>
-            <a href="#projects" className="footer-nav-link">Projects</a>
-            <a href="#contact"  className="footer-nav-link">Contact</a>
+            <a href="#about" className="footer-nav-link">
+              About
+            </a>
+            <a href="#skills" className="footer-nav-link">
+              Skills
+            </a>
+            <a href="#projects" className="footer-nav-link">
+              Projects
+            </a>
+            <a href="#contact" className="footer-nav-link">
+              Contact
+            </a>
           </nav>
 
-          <p className="footer-copy">© 2025 Peter Akasi MBA. All rights reserved.</p>
+          <p className="footer-copy">
+            © 2025 Peter Akasi MBA. All rights reserved.
+          </p>
 
           <div className="footer-social">
             <a
@@ -114,7 +126,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
     </footer>
   );
 };

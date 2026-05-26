@@ -1,5 +1,14 @@
 import "./Skills.css";
-import { FaHtml5, FaSass, FaReact, FaBootstrap, FaFigma, FaPython, FaNodeJs, FaAws } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaSass,
+  FaReact,
+  FaBootstrap,
+  FaFigma,
+  FaPython,
+  FaNodeJs,
+  FaAws,
+} from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiTailwindcss, SiMongodb, SiExpress, SiMysql } from "react-icons/si";
@@ -8,36 +17,33 @@ const skillGroups = [
   {
     category: "Core Languages",
     skills: [
-      { Icon: FaHtml5,          name: "HTML5",      color: "#e34c26" },
-      { Icon: IoLogoCss3,       name: "CSS3",       color: "#2965f1" },
       { Icon: RiJavascriptFill, name: "JavaScript", color: "#f7df1e" },
-      { Icon: FaPython,         name: "Python",     color: "#3776ab" },
+      { Icon: FaPython, name: "Python", color: "#3776ab" },
     ],
   },
   {
     category: "Frontend",
     skills: [
-      { Icon: FaReact,       name: "React",        color: "#61dafb" },
+      { Icon: FaReact, name: "React", color: "#61dafb" },
       { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#38bdf8" },
-      { Icon: FaBootstrap,   name: "Bootstrap",    color: "#7952b3" },
-      { Icon: FaSass,        name: "Sass",         color: "#cc6699" },
-      { Icon: FaFigma,       name: "Figma",        color: "#f24e1e" },
     ],
   },
   {
     category: "Backend & Database",
     skills: [
-      { Icon: FaNodeJs,   name: "Node.js",   color: "#68a063" },
-      { Icon: SiExpress,  name: "Express",   color: "#888888" },
-      { Icon: SiMongodb,  name: "MongoDB",   color: "#47a248" },
-      { Icon: SiMysql,    name: "MySQL",     color: "#4479a1" },
+      { Icon: FaNodeJs, name: "Node.js", color: "#68a063" },
+      { Icon: SiExpress, name: "Express", color: "#888888" },
+      { Icon: SiMongodb, name: "MongoDB", color: "#47a248" },
+      { Icon: SiMysql, name: "MySQL", color: "#4479a1" },
     ],
   },
   {
     category: "Cloud & Infrastructure",
-    skills: [
-      { Icon: FaAws, name: "AWS", color: "#ff9900" },
-    ],
+    skills: [{ Icon: FaAws, name: "AWS", color: "#ff9900" }],
+  },
+  {
+    category: "Design & Tools",
+    skills: [{ Icon: FaFigma, name: "Figma", color: "#f24e1e" }],
   },
 ];
 

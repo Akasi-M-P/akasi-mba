@@ -1,21 +1,35 @@
 [
   {
     "id": 1,
-    "title": "Audiophile",
-    "img": "/assets/audiophile.png",
-    "description": "A full-featured ecommerce platform for high-end audio enthusiasts with product listings, cart management, and a multi-step checkout flow.",
-    "techStack": ["React", "JavaScript", "CSS3", "HTML5"],
-    "impact": "Seamless multi-step checkout with persistent cart state",
-    "github": "https://github.com/Akasi-M-P/audiophile_ecommerce",
-    "live": "https://audiophile-ecommerce-akasi-m-p.vercel.app/"
+    "title": "Awintour",
+    "img": "/assets/Awintour_Screenshot.jpg",
+    "description": "Full-stack tour booking platform — user auth, admin dashboard, wishlists, reviews & Stripe payments",
+    "techStack": [
+      "Node.js",
+      "JavaScript",
+      "JWT",
+      "MongoDB",
+      "Stripe",
+      "Mongoose",
+      "AWS S3"
+    ],
+    "impact": "User authentication, admin dashboard, wishlists, reviews, and Stripe payment integration",
+    "github": "https://github.com/Akasi-M-P/awintour",
+    "live": "https://awintour.onrender.com/"
   },
   {
     "id": 2,
-    "title": "Dictionary App",
-    "img": "/assets/dictionaryapp.png",
-    "description": "A dictionary web app with access to 150,000+ words, audio pronunciation guides, and a clean search UX built for language learners.",
-    "techStack": ["HTML5", "CSS3", "JavaScript"],
-    "impact": "150,000+ words with audio pronunciation support",
+    "title": "Defino",
+    "img": "/assets/Defino_Screenshot.jpg",
+    "description": "A smart, clean English dictionary PWA. Instant definitions, pronunciations, synonyms, antonyms, etymology, voice search, flashcard quiz, and share cards. Built with React, Vite, and Tailwind CSS.",
+    "techStack": [
+      "React",
+      "JavaScript",
+      "Speech-to-Text",
+      "Framer Motion",
+      "Web Search API"
+    ],
+    "impact": "Instant word definitions, pronunciations, synonyms, antonyms, etymology, voice search, flashcard quiz, and share cards",
     "github": "https://github.com/Akasi-M-P/web-dictionary-app",
     "live": "https://web-dictionary-app-tawny.vercel.app/"
   },
