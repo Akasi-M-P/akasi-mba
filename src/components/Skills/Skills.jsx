@@ -1,50 +1,82 @@
 import "./Skills.css";
-import { FaHtml5, FaSass, FaReact, FaBootstrap, FaFigma } from "react-icons/fa";
+import { FaHtml5, FaSass, FaReact, FaBootstrap, FaFigma, FaPython, FaNodeJs, FaAws } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiExpress, SiMysql } from "react-icons/si";
+
+const skillGroups = [
+  {
+    category: "Core Languages",
+    skills: [
+      { Icon: FaHtml5,          name: "HTML5",      color: "#e34c26" },
+      { Icon: IoLogoCss3,       name: "CSS3",       color: "#2965f1" },
+      { Icon: RiJavascriptFill, name: "JavaScript", color: "#f7df1e" },
+      { Icon: FaPython,         name: "Python",     color: "#3776ab" },
+    ],
+  },
+  {
+    category: "Frontend",
+    skills: [
+      { Icon: FaReact,       name: "React",        color: "#61dafb" },
+      { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#38bdf8" },
+      { Icon: FaBootstrap,   name: "Bootstrap",    color: "#7952b3" },
+      { Icon: FaSass,        name: "Sass",         color: "#cc6699" },
+      { Icon: FaFigma,       name: "Figma",        color: "#f24e1e" },
+    ],
+  },
+  {
+    category: "Backend & Database",
+    skills: [
+      { Icon: FaNodeJs,   name: "Node.js",   color: "#68a063" },
+      { Icon: SiExpress,  name: "Express",   color: "#888888" },
+      { Icon: SiMongodb,  name: "MongoDB",   color: "#47a248" },
+      { Icon: SiMysql,    name: "MySQL",     color: "#4479a1" },
+    ],
+  },
+  {
+    category: "Cloud & Infrastructure",
+    skills: [
+      { Icon: FaAws, name: "AWS", color: "#ff9900" },
+    ],
+  },
+];
 
 const Skills = () => {
   return (
-    <>
-      <div className="skill-header py-4 mt-10">
-        <h1 className="text-white text-center">Skills</h1>
-      </div>
-      <div className="skills">
-        <div data-aos="flip-up" className="skill">
-          <FaHtml5 className="text-6xl text-orange-600 mx-auto" />
-          <h1 className="text-center text-orange-600">HTML5</h1>
-        </div>
-        <div data-aos="flip-up" className="skill">
-          <IoLogoCss3 className="text-6xl text-blue-600 mx-auto" />
-          <h1 className="text-center text-blue-600">CSS3</h1>
-        </div>
-        <div data-aos="flip-up" className="skill">
-          <RiJavascriptFill className="text-6xl text-yellow-500 mx-auto" />
-          <h1 className="text-center text-yellow-500">JAVASCRIPT</h1>
-        </div>
-        <div data-aos="flip-up" className="skill">
-          <FaSass className="text-6xl text-pink-600 mx-auto" />
-          <h1 className="text-center text-pink-600">SASS</h1>
-        </div>
-        <div data-aos="flip-up" className="skill">
-          <FaReact className="text-6xl text-blue-400 mx-auto" />
-          <h1 className="text-center text-blue-400">REACT</h1>
-        </div>
-        <div data-aos="flip-up" className="skill">
-          <SiTailwindcss className="text-6xl text-blue-400 mx-auto" />
-          <h1 className="text-center text-blue-400">TAILWIND CSS</h1>
-        </div>
-        <div data-aos="flip-up" className="skill">
-          <FaBootstrap className="text-6xl text-purple-500 mx-auto" />
-          <h1 className="text-center text-purple-500">BOOTSTRAP</h1>
-        </div>
-        <div data-aos="flip-up" className="skill">
-          <FaFigma className="text-6xl text-fuchsia-500 mx-auto" />
-          <h1 className="text-center text-fuchsia-500">FIGMA</h1>
+    <section className="skills" id="skills" aria-labelledby="skills-heading">
+      <div className="skills-inner">
+        <span className="section-label">Tech Stack</span>
+        <h2 className="skills-heading" id="skills-heading">
+          What I work with
+        </h2>
+
+        <div className="skill-groups">
+          {skillGroups.map((group) => (
+            <div className="skill-group" key={group.category}>
+              <h3 className="skill-group-label">{group.category}</h3>
+              <div className="skill-grid">
+                {group.skills.map(({ Icon, name, color }) => (
+                  <div
+                    className="skill-card"
+                    key={name}
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                  >
+                    <Icon
+                      className="skill-icon"
+                      style={{ color }}
+                      aria-hidden="true"
+                    />
+                    <span className="skill-name">{name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
+
 export default Skills;

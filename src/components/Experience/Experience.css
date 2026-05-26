@@ -1,0 +1,185 @@
+/* ─── Section ────────────────────────────────────────────── */
+.experience {
+  background-color: var(--color-bg-dark);
+  padding: 96px 24px;
+}
+
+.experience-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ─── Heading ────────────────────────────────────────────── */
+.experience-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 56px;
+}
+
+/* ─── Two-column layout on desktop ──────────────────────── */
+.experience-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+
+@media (min-width: 1024px) {
+  .experience-layout {
+    grid-template-columns: 3fr 2fr;
+    gap: 80px;
+  }
+}
+
+/* ─── Column header (icon + label) ──────────────────────── */
+.exp-column-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+
+.exp-column-header h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-text-dark-muted);
+}
+
+.exp-column-header--spaced {
+  margin-top: 48px;
+}
+
+/* ─── Timeline ───────────────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  padding-left: 24px;
+  border-left: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 36px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Dot on the timeline rail */
+.timeline-dot {
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-bg-dark);
+  box-shadow: 0 0 0 3px rgba(68, 161, 215, 0.25);
+}
+
+/* ─── Timeline card ──────────────────────────────────────── */
+.timeline-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-lg);
+  padding: 20px 20px 24px;
+  transition: border-color var(--transition-base);
+}
+
+.timeline-card:hover {
+  border-color: rgba(68, 161, 215, 0.3);
+}
+
+.timeline-period {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 6px;
+}
+
+.timeline-role {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+  line-height: var(--leading-snug);
+}
+
+.timeline-company {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-dark-muted);
+  margin-bottom: 14px;
+}
+
+.timeline-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline-points li {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-dark-muted);
+  padding-left: 14px;
+  position: relative;
+}
+
+.timeline-points li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+/* ─── Certification list ─────────────────────────────────── */
+.cert-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cert-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 16px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-base);
+}
+
+.cert-item:hover {
+  background: rgba(68, 161, 215, 0.06);
+}
+
+.cert-name {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.cert-issuer {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-dark-muted);
+}

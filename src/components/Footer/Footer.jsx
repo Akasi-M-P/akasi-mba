@@ -1,89 +1,122 @@
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <>
-      <div id="footer" className="footer">
-        <div>
-          <h1 className="footer-header py-4">Get In Touch</h1>
+    <footer id="contact" aria-label="Contact and site footer">
+
+      {/* ── Contact section ── */}
+      <section className="contact" aria-labelledby="contact-heading">
+        <div className="contact-inner">
+          <span className="section-label">Let's Connect</span>
+          <h2 className="contact-heading" id="contact-heading">
+            Ready to build something great?
+          </h2>
+          <p className="contact-sub">
+            I'm open to freelance projects, full-time roles, and interesting
+            collaborations. Reach out through any of these channels.
+          </p>
+
+          <ul className="contact-channels" aria-label="Contact channels">
+            <li>
+              <a href="mailto:mbajameel90@gmail.com" className="contact-channel">
+                <FiMail className="channel-icon" aria-hidden="true" />
+                <span>mbajameel90@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/peter-akasimba/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-channel"
+              >
+                <FaLinkedin className="channel-icon" aria-hidden="true" />
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Akasi-M-P"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-channel"
+              >
+                <FaGithub className="channel-icon" aria-hidden="true" />
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/+233241899029"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-channel"
+              >
+                <FaWhatsapp className="channel-icon" aria-hidden="true" />
+                <span>WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+
+          <a href="mailto:mbajameel90@gmail.com" className="btn btn-primary">
+            Send Me a Message
+          </a>
         </div>
-        <div className="social-icons flex lg:gap-12">
-          <div>
-            <a href="https://github.com/Akasi-M-P" target="blank">
-              <FaGithub
-                className="icon text-5xl"
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-              />
+      </section>
+
+      {/* ── Bottom bar ── */}
+      <div className="footer-bar">
+        <div className="footer-bar-inner">
+          <nav className="footer-nav" aria-label="Footer navigation">
+            <a href="#about"    className="footer-nav-link">About</a>
+            <a href="#skills"   className="footer-nav-link">Skills</a>
+            <a href="#projects" className="footer-nav-link">Projects</a>
+            <a href="#contact"  className="footer-nav-link">Contact</a>
+          </nav>
+
+          <p className="footer-copy">© 2025 Peter Akasi MBA. All rights reserved.</p>
+
+          <div className="footer-social">
+            <a
+              href="https://github.com/Akasi-M-P"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="footer-social-link"
+            >
+              <FaGithub aria-hidden="true" />
             </a>
-          </div>
-          <div>
             <a
               href="https://www.linkedin.com/in/peter-akasi-mba/"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="footer-social-link"
             >
-              <FaLinkedin
-                className="icon text-5xl"
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-              />
+              <FaLinkedin aria-hidden="true" />
             </a>
-          </div>
-          <div>
-            <a href="" target="blank">
-              <FaXTwitter
-                className="icon text-5xl"
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-              />
-            </a>
-          </div>
-          <div>
-            <a href="" target="blank">
-              <FaInstagram
-                className="icon text-5xl"
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-              />
-            </a>
-          </div>
-          <div>
-            <a href="https://wa.me/+233241899029" target="blank">
-              <FaWhatsapp
-                className="icon text-5xl"
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-              />
+            {/* TODO: Add your Twitter/X URL and uncomment */}
+            {/* <a href="https://twitter.com/YOUR_HANDLE" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" className="footer-social-link">
+              <FaXTwitter aria-hidden="true" />
+            </a> */}
+            <a
+              href="https://wa.me/+233241899029"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="footer-social-link"
+            >
+              <FaWhatsapp aria-hidden="true" />
             </a>
           </div>
         </div>
       </div>
-      <div>
-        <div className="footer-nav">
-          <div className="flex flex-row gap-10">
-            <div className="nav-link">
-              <a href="#about">About</a>
-            </div>
-            <div className="nav-link">
-              <a href="#projects">Projects</a>
-            </div>
-            <div className="nav-link">
-              <a href="#footer">Contact</a>
-            </div>
-          </div>
-          <div className="copy-rights">
-            <p>2024 PETER AKASI MBA ©️ ALL RIGHTS RESERVED</p>
-          </div>
-        </div>
-      </div>
-    </>
+
+    </footer>
   );
 };
+
 export default Footer;

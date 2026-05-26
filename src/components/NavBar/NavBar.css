@@ -1,79 +1,137 @@
-header {
-    height: 100px;
-    background-color: #0e0408;
+/* ─── Fixed top bar ──────────────────────────────────────── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--color-bg-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 8px;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(221, 213, 213, 0.3);
-    font-family: "Josefin Slab", sans-serif;
-    position: fixed;
-    z-index: 2;
-    left: 40px;
+.navbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav-link {
-    border: transparent;
-    padding: 4px;
-    border-radius: 15px;
+/* ─── Logo ───────────────────────────────────────────────── */
+.navbar-logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: opacity var(--transition-base);
+  flex-shrink: 0;
 }
 
-
-/*  640-768    - tablet landscape */
-@media all and (min-width: 640px) and (max-width: 768px) {
-
-nav {
-    font-size: 20px;
-    left: 200px;
+.navbar-logo:hover {
+  opacity: 0.8;
 }
 
- nav a:hover{
-      
-    color: rgb(68, 161, 215);
-
-    }
+/* ─── Desktop nav links (hidden on mobile) ───────────────── */
+.navbar-links {
+  display: none;
+  gap: 32px;
 }
 
-
-/* 1024-768    - Desktop landscape */
-@media all and (min-width: 769px) and (max-width: 1024px) { 
-    nav {
-    font-size: 24px;
-    left: 270px;
-}
-}
-
-@media all and (min-width: 1025px) and (max-width: 1280px) { 
-    nav {
-    font-size: 24px;
-    left:270px;
+.navbar-link {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-base);
+  color: var(--color-text-dark);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition-base), border-color var(--transition-base);
 }
 
-    nav a:hover{
-      
-    color: rgb(68, 161, 215);
-
-    }
+.navbar-link:hover,
+.navbar-link:focus-visible {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
 }
 
-@media all and (min-width: 1281px)  {
-     nav {
-    font-size: 24px;
-    font-weight: bold;
-    left:500px;
+/* ─── Desktop CTA (hidden on mobile) ────────────────────── */
+.navbar-cta {
+  display: none;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  min-height: 38px;
 }
 
-    nav a:hover{
-      
-    color: rgb(68, 161, 215);
+/* ─── Hamburger button (mobile only) ────────────────────── */
+.navbar-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-base);
+}
 
-    }
- }
+.navbar-hamburger:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.navbar-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-text-dark);
+  border-radius: 2px;
+  transition: background-color var(--transition-base);
+}
+
+.navbar-hamburger:hover span {
+  background-color: var(--color-accent);
+}
+
+/* ─── Mobile dropdown ────────────────────────────────────── */
+.navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 24px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  gap: 4px;
+}
+
+.navbar-mobile-link {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: color var(--transition-base);
+}
+
+.navbar-mobile-link:hover {
+  color: var(--color-accent);
+}
+
+.navbar-mobile-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+/* ─── Tablet and up: show desktop nav, hide hamburger ───── */
+@media (min-width: 768px) {
+  .navbar-links    { display: flex; }
+  .navbar-cta      { display: inline-flex; }
+  .navbar-hamburger { display: none; }
+}

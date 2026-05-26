@@ -1,59 +1,94 @@
 import "./Hero.css";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FiArrowDown } from "react-icons/fi";
 import ProfilePhoto from "/assets/peter.jpeg";
+
 const Hero = () => {
   return (
-    <>
-      <main className="" id="about">
-        <div className="hero-box">
-          <h1 className="text-center py-4">
-            Hi. I’m Peter. A Frontend Engineer.
+    <section className="hero" id="about" aria-labelledby="hero-name">
+      <div className="hero-inner">
+
+        {/* ── Text column ── */}
+        <div className="hero-text">
+          <span className="section-label">Full-Stack Developer · AWS Certified Cloud Practitioner</span>
+          <h1 className="hero-name" id="hero-name">
+            Hi, I'm Peter Mba Akasi.
           </h1>
-          <h4 className="text-center">
-            I develop applications that are engaging, accessible and user
-            centric.
-          </h4>
-        </div>
-        <div className="hero-box">
-          <img
-            src={ProfilePhoto}
-            alt="peter-photo"
-            className="profile_photo py-6"
-          />
-          <div className="social-icons">
-            <div>
-              <a href="https://github.com/Akasi-M-P" target="blank">
-                <FaGithub className="icon text-5xl" />
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.linkedin.com/in/peter-akasi-mba/"
-                target="blank"
-              >
-                <FaLinkedin className="icon text-5xl" />
-              </a>
-            </div>
-            <div>
-              <a href="" target="blank">
-                <FaXTwitter className="icon text-5xl" />
-              </a>
-            </div>
-            <div>
-              <a href="" target="blank">
-                <FaInstagram className="icon text-5xl" />
-              </a>
-            </div>
-            <div>
-              <a href="https://wa.me/+233241899029" target="blank">
-                <FaWhatsapp className="icon text-5xl" />
-              </a>
-            </div>
+          <p className="hero-tagline">
+            I build scalable, cloud-aware web applications end-to-end — from
+            pixel-perfect React frontends to Node.js APIs and AWS infrastructure.
+          </p>
+
+          <div className="hero-ctas">
+            <a href="#projects" className="btn btn-primary">
+              View My Work <FiArrowDown aria-hidden="true" />
+            </a>
+            <a href="#contact" className="btn btn-secondary">
+              Get In Touch
+            </a>
+          </div>
+
+          <div className="hero-social">
+            <a
+              href="https://github.com/Akasi-M-P"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              className="social-icon"
+            >
+              <FaGithub aria-hidden="true" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/peter-akasimba/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              className="social-icon"
+            >
+              <FaLinkedin aria-hidden="true" />
+            </a>
+            {/*
+              TODO: Replace href with your actual Twitter/X profile URL,
+              then remove the social-icon--disabled class and tabIndex/aria-hidden.
+            */}
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter/X profile (coming soon)"
+              className="social-icon social-icon--disabled"
+              tabIndex="-1"
+              aria-hidden="true"
+            >
+              <FaXTwitter aria-hidden="true" />
+            </a>
+            <a
+              href="https://wa.me/+233241899029"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp contact"
+              className="social-icon"
+            >
+              <FaWhatsapp aria-hidden="true" />
+            </a>
           </div>
         </div>
-      </main>
-    </>
+
+        {/* ── Photo column ── */}
+        <div className="hero-photo-wrap">
+          <img
+            src={ProfilePhoto}
+            alt="Peter Akasi MBA, Frontend Engineer"
+            className="hero-photo"
+            width="400"
+            height="400"
+          />
+        </div>
+
+      </div>
+    </section>
   );
 };
+
 export default Hero;

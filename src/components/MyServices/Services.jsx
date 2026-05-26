@@ -4,16 +4,18 @@ import services from "/src/ServiceData.json";
 
 const Services = () => {
   return (
-    <div>
-      <div>
-        <h1 className="service-header text-center pt-8">Services</h1>
+    <section className="services" id="services" aria-labelledby="services-heading">
+      <div className="services-inner">
+        <span className="section-label">What I offer</span>
+        <h2 className="services-heading" id="services-heading">Services</h2>
+        <div className="service-container">
+          {services.map((service) => (
+            <Service service={service} key={service.id} />
+          ))}
+        </div>
       </div>
-      <div className="service-container">
-        {services.map((service) => (
-          <Service service={service} key={service.id} />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
+
 export default Services;

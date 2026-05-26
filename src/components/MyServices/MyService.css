@@ -1,123 +1,98 @@
+/* ─── Section ────────────────────────────────────────────── */
+.services {
+  background-color: #fff;
+  padding: 96px 24px;
+}
+
+.services-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ─── Heading ────────────────────────────────────────────── */
+.services-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin-bottom: 48px;
+}
+
+/* ─── Grid ───────────────────────────────────────────────── */
+.service-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .service-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ─── Card ───────────────────────────────────────────────── */
 .service {
-    width: 80%;
-    margin: 2rem auto;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 28px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(26, 15, 32, 0.08);
+  background-color: var(--color-bg-light);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
 }
 
-.service-header {
-    font-size: 28px;
-    font-family: "Anta", sans-serif;
-    font-weight: 700;
-    letter-spacing: 5px;
+.service:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: var(--color-accent);
 }
 
-.service-title {
-    font-family: "Anta";
-}
-
-.service-des {
-    font-family: "Josefin Slab";
-    font-size: 18px;
-    font-weight: 600;
-    padding: 8px 0;
+/* ─── Icon + title row ───────────────────────────────────── */
+.service-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
 }
 
 .service-icon {
-    border: 1px solid rgb(164, 145, 145);
-    padding: 4px;
-    border-radius: 8px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(68, 161, 215, 0.08);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(68, 161, 215, 0.2);
 }
 
 .service-icon img {
-    width: 50px;
-}
-
-.service-icon-des {
-    align-items: center;
-    column-gap: 15px;
-}
-
-/*  640-768    - tablet landscape */
-@media all and (min-width: 640px) and (max-width: 768px) {
-    .service {
-    width: 60%;
-    padding: 25px;
-   
-}
-
-.service-header {
-    font-size: 30px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .service-title {
-    font-size: 24px;
-    font-family: "Anta";
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: 700;
+  color: var(--color-text-light);
+  line-height: var(--leading-snug);
 }
 
-.service-des {
-    font-family: "Josefin Slab";
-    font-size: 20px;
-    font-weight: 600;
-    padding: 8px 0;
-}
-
-}
-
-@media all and (min-width: 1024px) and (max-width: 1280px) { 
-    .service-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    
-    .service {
-    width:90%;
-    padding: 30px;
-}
-
-.service-header {
-    font-size: 32px;
-}
-
-.service-title {
-    font-family: "Anta";
-    font-size: 28px;
-}
-
-.service-des {
-    font-family: "Josefin Slab";
-    font-size: 24px;
-
-}
-}
-
-
-@media all and (min-width: 1281px) {
-        .service-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    
-    .service {
-    width: 80%;
-    padding: 30px;
-}
-
-.service-header {
-    font-size: 32px;
-}
-
-.service-title {
-    font-family: "Anta";
-    font-size: 28px;
-}
-
-.service-des {
-    font-family: "Josefin Slab";
-    font-size: 20px;
-
-}
+/* ─── Description ────────────────────────────────────────── */
+.service-desc {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-light-muted);
 }

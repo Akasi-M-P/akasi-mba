@@ -3,23 +3,29 @@
     "id": 1,
     "title": "Audiophile",
     "img": "/assets/audiophile.png",
-    "description": "I developed an Audiophile ecommerce web app using HTML5, CSS3, JavaScript, and React. The platform offers a wide range of high-quality audio products for enthusiasts. Implemented user-friendly features and a seamless checkout process.",
+    "description": "A full-featured ecommerce platform for high-end audio enthusiasts with product listings, cart management, and a multi-step checkout flow.",
+    "techStack": ["React", "JavaScript", "CSS3", "HTML5"],
+    "impact": "Seamless multi-step checkout with persistent cart state",
     "github": "https://github.com/Akasi-M-P/audiophile_ecommerce",
     "live": "https://audiophile-ecommerce-akasi-m-p.vercel.app/"
   },
   {
     "id": 2,
-    "title": "Dictionary",
+    "title": "Dictionary App",
     "img": "/assets/dictionaryapp.png",
-    "description": "I created a dictionary web app with HTML5, CSS3, and JavaScript, providing access to 150,000+ words. The app includes audio pronunciation and guides, improving language learning and boosting user engagement. ",
+    "description": "A dictionary web app with access to 150,000+ words, audio pronunciation guides, and a clean search UX built for language learners.",
+    "techStack": ["HTML5", "CSS3", "JavaScript"],
+    "impact": "150,000+ words with audio pronunciation support",
     "github": "https://github.com/Akasi-M-P/web-dictionary-app",
     "live": "https://web-dictionary-app-tawny.vercel.app/"
   },
   {
     "id": 3,
-    "title": "Countries Application",
+    "title": "Countries App",
     "img": "/assets/countriesapp.png",
-    "description": "I created a countries app using HTML5, CSS3, JavaScript, and React. This app enables users to search for countries and view detailed information such as population, capital, and currency.",
+    "description": "A searchable global data browser letting users explore countries with detailed info — population, capital, currency, and bordering nations.",
+    "techStack": ["React", "JavaScript", "REST API", "CSS3"],
+    "impact": "Real-time search across 250+ countries",
     "github": "https://github.com/Akasi-M-P/countries-web-application",
     "live": "https://countries-web-application.vercel.app/"
   },
@@ -27,7 +33,9 @@
     "id": 4,
     "title": "GitHub User Finder",
     "img": "/assets/gitHubUser.png",
-    "description": "I developed a GitHub user finder app using HTML5, CSS3, JavaScript, and React. The app allows users to search for GitHub profiles and view repositories. With a user-friendly interface and real-time search, it simplifies the discovery of GitHub users and their work.",
+    "description": "A GitHub profile explorer that fetches user data and repositories in real time with a clean interface and instant search results.",
+    "techStack": ["React", "JavaScript", "GitHub API"],
+    "impact": "Live GitHub API integration with instant profile lookup",
     "github": "https://github.com/Akasi-M-P/github-user",
     "live": "https://github-user-amber.vercel.app/"
   }

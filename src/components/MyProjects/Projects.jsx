@@ -4,18 +4,20 @@ import projects from "/src/ProjectsData.json";
 
 const Projects = () => {
   return (
-    <div id="projects">
-      <div className="projects">
-        <h1 className="projects-header text-white py-8 text-center">
-          Projects
-        </h1>
+    <section className="projects" id="projects" aria-labelledby="projects-heading">
+      <div className="projects-inner">
+        <span className="section-label">My Work</span>
+        <h2 className="projects-heading" id="projects-heading">
+          Featured Projects
+        </h2>
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <Project project={project} key={project.id} />
+          ))}
+        </div>
       </div>
-      <div className="projects-container">
-        {projects.map((project) => (
-          <Project project={project} key={project.id} />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
+
 export default Projects;

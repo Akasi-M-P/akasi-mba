@@ -1,18 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redressed&family=Roboto:wght@400;500;700;900&family=Yellowtail&display=swap');
-
+/* Two fonts only: Anta (display/headings) + Josefin Slab (body copy) */
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Design tokens ──────────────────────────────────────── */
+:root {
+  /* Colors */
+  --color-bg-dark: #0e0408;
+  --color-bg-dark-surface: #1a0f18;
+  --color-bg-light: #ede9ef;
+  --color-accent: #44a1d7;
+  --color-accent-hover: #2d87be;
+
+  --color-text-dark: #f0ebf5;
+  --color-text-dark-muted: #c8c2d8;
+  --color-text-light: #1a0f20;
+  --color-text-light-muted: #3d3455;
+
+  /* Typography */
+  --font-display: "Anta", sans-serif;
+  --font-body: "Montserrat", serif;
+
+  /* Spacing */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-base: 200ms ease;
+
+  /* ── Type scale — one source of truth, never hard-code rem values ── */
+  --text-xs: 0.75rem; /*  12px — badges, tiny labels  */
+  --text-sm: 0.875rem; /*  14px — captions, meta, secondary  */
+  --text-base: 1rem; /*  16px — body, descriptions  */
+  --text-md: 1.125rem; /*  18px — lead text, card titles  */
+  --text-lg: 1.25rem; /*  20px — sub-headings  */
+  --text-xl: 1.5rem; /*  24px — large card heads, stats  */
+  --text-2xl: clamp(1.75rem, 4vw, 2.25rem); /*  28–36px — section h2  */
+  --text-hero: clamp(2.25rem, 5.5vw, 3.75rem); /*  36–60px — hero h1  */
+
+  /* ── Line heights ──────────────────────────────────────── */
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+  --leading-loose: 1.9;
+}
+
+/* ─── Reset ──────────────────────────────────────────────── */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #d7d4d7;
+  background-color: var(--color-bg-light);
+  font-family: var(--font-body);
+  color: var(--color-text-light);
+  -webkit-font-smoothing: antialiased;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Visible keyboard focus ring — never use outline:none without a custom replacement */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ─── Global buttons ─────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.5px;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  min-height: 44px; /* WCAG 2.5.5 touch target minimum */
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  box-shadow: 0 6px 20px rgba(68, 161, 215, 0.35);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-text-light);
+  border-color: currentColor;
+}
+
+.btn-secondary:hover {
+  color: var(--color-accent);
+}
+
+/* Used on dark backgrounds */
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-text-dark);
+  border-color: rgba(240, 235, 245, 0.3);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ─── Global section eyebrow label ──────────────────────── */
+.section-label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}

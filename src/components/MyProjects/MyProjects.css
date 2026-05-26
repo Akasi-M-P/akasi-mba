@@ -1,177 +1,142 @@
+/* ─── Section ────────────────────────────────────────────── */
 .projects {
-    background-color: #0e0408;
+  background-color: var(--color-bg-dark);
+  padding: 96px 24px;
 }
 
-.projects-container {
-    background-color: #0e0408;
-    padding: 50px 0;
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    row-gap: 40px;
+.projects-inner {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.project-container {
-    width: 90%;
-    height: auto;
-    margin: auto;
-    padding: 20px;
-    color: #fff;
-    background: rgba(240, 235, 232, 0.24);
-    border-radius: 16px;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(197, 183, 177, 0.19);
+/* ─── Heading ────────────────────────────────────────────── */
+.projects-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 48px;
 }
 
-.projects-header {
-    font-size: 28px;
-    font-family: "Anta", sans-serif;
-    font-weight: 700;
-    letter-spacing: 5px;
+/* ─── Responsive grid ────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
-.project-title-img-des {
-    font-family: "Josefin Slab", sans-serif;
-}
-
-.project-title-img-des img {
-    border-radius: 5px;
-}
-
-.project-title {
-    font-family: "Anta";
-    letter-spacing: 2px;
-    font-size: 18px;
-}
-
-.project-des {
-    font-size: 16px;
-}
-
-.project-links {
-    display: flex;
-    column-gap: 20px;
-    font-family: "Anta", sans-serif;
-    letter-spacing: 1px;
-}
-
-.project-live {
-    border: 1px solid #fff;
-    padding: 8px 30px;
-    border-radius: 10px;
-}
-
-.project-github {
-    border: 1px solid #fff;
-    padding: 8px 30px;
-    border-radius: 10px;
-}
-
-.link-icon {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-}
-
-.project-link-hover:hover {
-    border: 1px solid #2766a8;
-    padding: 8px 30px;
-    border-radius: 10px;
-    color: #2766a8;
-}
-
-
-
-/*  640-768    - tablet landscape */
-@media all and (min-width: 768px) and (max-width: 1024px ) {
-
-.project-container {
-    width: 50%;
-}
-
-.projects-header {
-    font-size: 32px;
-}
-
-.project-title-img-des img {
-    border-radius: 5px;
-}
-
-.project-title {
-    font-family: "Anta";
-    letter-spacing: 2px;
-    font-size: 24px;
-}
-
-.project-des {
-    font-size: 18px;
-}
-
-.project-links {
-    display: flex;
-    column-gap: 20px;
-    font-family: "Anta", sans-serif;
-    letter-spacing: 1px;
-}
-
-.project-live {
-    border: 1px solid #fff;
-    padding: 10px 30px;
-    border-radius: 10px;
-}
-}
-
-
-@media all and (min-width: 1025px) and (max-width: 1280px) {
-
-.projects-container {
+@media (min-width: 768px) {
+  .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 40px;
+  }
 }
 
-.project-container {
-    width: 80%;
-}
-}
-
-
-@media all and (min-width: 1281px) {
-.projects {
-    background-color: #0e0408;
-    margin-top: 5rem;
+@media (min-width: 1280px) {
+  .projects-grid {
+    gap: 32px;
+  }
 }
 
-.projects-container {
-    background-color: #0e0408;
-    padding: 50px 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 40px;
+/* ─── Card ───────────────────────────────────────────────── */
+.project-card {
+  display: flex;
+  flex-direction: column;          /* equal-height: body stretches to fill */
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
 }
 
-.project-container {
-    width: 80%;
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(68, 161, 215, 0.4);
 }
 
-.projects-header {
-    font-size: 32px;
+/* ─── Thumbnail ──────────────────────────────────────────── */
+.project-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 
-.project-title-img-des {
-    font-family: "Josefin Slab", sans-serif;
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms ease;
 }
 
-.project-title-img-des img {
-    border-radius: 5px;
+.project-card:hover .project-img {
+  transform: scale(1.04);
+}
+
+/* ─── Body ───────────────────────────────────────────────── */
+.project-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  flex: 1; /* stretches so all cards match height in a row */
 }
 
 .project-title {
-    font-family: "Anta";
-    letter-spacing: 2px;
-    font-size: 24px;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  letter-spacing: 0.25px;
 }
 
-.project-des {
-    font-size: 20px;
+.project-desc {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-dark-muted);
 }
+
+/* ─── Impact line ────────────────────────────────────────── */
+.project-impact {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+/* ─── Tech badges ────────────────────────────────────────── */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin-top: auto; /* push tags toward the bottom of the body */
+}
+
+.project-tag {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: 0.5px;
+  color: var(--color-text-dark-muted);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+}
+
+/* ─── Action buttons ─────────────────────────────────────── */
+.project-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.project-btn {
+  font-size: 0.82rem;
+  padding: 10px 18px;
+  min-height: 40px;
 }

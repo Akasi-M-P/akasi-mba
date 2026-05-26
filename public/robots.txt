@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: Replace YOUR-PORTFOLIO-URL with your actual deployed domain
+Sitemap: https://YOUR-PORTFOLIO-URL.vercel.app/sitemap.xml
