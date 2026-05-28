@@ -35,13 +35,20 @@
   },
   {
     "id": 3,
-    "title": "Countries App",
-    "img": "/assets/countriesapp.png",
-    "description": "A searchable global data browser letting users explore countries with detailed info — population, capital, currency, and bordering nations.",
-    "techStack": ["React", "JavaScript", "REST API", "CSS3"],
-    "impact": "Real-time search across 250+ countries",
-    "github": "https://github.com/Akasi-M-P/countries-web-application",
-    "live": "https://countries-web-application.vercel.app/"
+    "title": "eBuy",
+    "img": "/assets/ebuy.jpg",
+    "description": "A full-stack luxury e-commerce platform with a customer storefront, multi-step checkout, order management, and a complete admin panel for products, analytics, marketing, and store settings.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth",
+      "Tailwind CSS"
+    ],
+    "impact": "End-to-end commerce — from product browsing to order persistence with server-verified pricing",
+    "github": "https://github.com/your-username/ebuy",
+    "live": "https://ebuy-opal.vercel.app/"
   },
   {
     "id": 4,
