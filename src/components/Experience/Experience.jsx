@@ -59,12 +59,15 @@ const education = [
 
 const certifications = [
   { name: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services" },
-  { name: "Front-End Web Development", issuer: "Professional Certification" },
+  { name: "Front-End Web Development", issuer: "Azubi Africa" },
   {
     name: "The Complete Node.js Developer Course",
-    issuer: "Jonas Schmedtmann",
+    issuer: "Jonas Schmedtmann - Udemy",
   },
-  { name: "Complete Web Development Bootcamp", issuer: "Dr. Angela Yu" },
+  {
+    name: "Complete Web Development Bootcamp",
+    issuer: "Dr. Angela Yu - Udemy",
+  },
 ];
 
 const Experience = () => {

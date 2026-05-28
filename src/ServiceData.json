@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Full-Stack Web Development",
+    "title": "Web Development",
     "description": "End-to-end web applications using the MERN stack (MongoDB, Express, React, Node.js). From database design to REST APIs to polished React frontends — fully integrated and production-ready.",
     "img": "/assets/websitedevelopment.png"
   },
