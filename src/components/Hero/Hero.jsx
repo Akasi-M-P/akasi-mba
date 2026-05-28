@@ -2,7 +2,7 @@ import "./Hero.css";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FiArrowDown } from "react-icons/fi";
-import ProfilePhoto from "/assets/peter.jpeg";
+import ProfilePhoto from "/assets/peter_photo.png";
 
 const Hero = () => {
   return (

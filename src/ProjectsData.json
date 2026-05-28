@@ -21,7 +21,7 @@
     "id": 2,
     "title": "Defino",
     "img": "/assets/Defino_Screenshot.jpg",
-    "description": "A smart, clean English dictionary PWA. Instant definitions, pronunciations, synonyms, antonyms, etymology, voice search, flashcard quiz, and share cards. Built with React, Vite, and Tailwind CSS.",
+    "description": "A smart, clean English dictionary PWA. Instant definitions, pronunciations, synonyms, antonyms, etymology, voice search, flashcard quiz, and share cards.",
     "techStack": [
       "React",
       "JavaScript",

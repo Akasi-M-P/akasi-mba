@@ -20,7 +20,7 @@ const workExperience = [
     period: "Feb 2026 – Apr 2026",
     location: "Greater Accra, Ghana",
     points: [
-      "Appointed to teach BGEC107: Introduction to IT to undergraduate students at an ACBSP-accredited institution.",
+      "Appointed to teach Introduction to IT to undergraduate students at an ACBSP-accredited institution.",
       "Delivered a 9-credit hour weekly course covering core IT concepts, responsible for teaching, examining, marking, and grading.",
       "Fostered an engaging learning environment and maintained high professional academic standards.",
     ],
@@ -60,13 +60,20 @@ const education = [
 const certifications = [
   { name: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services" },
   { name: "Front-End Web Development", issuer: "Professional Certification" },
-  { name: "The Complete Node.js Developer Course", issuer: "Jonas Schmedtmann" },
+  {
+    name: "The Complete Node.js Developer Course",
+    issuer: "Jonas Schmedtmann",
+  },
   { name: "Complete Web Development Bootcamp", issuer: "Dr. Angela Yu" },
 ];
 
 const Experience = () => {
   return (
-    <section className="experience" id="experience" aria-labelledby="experience-heading">
+    <section
+      className="experience"
+      id="experience"
+      aria-labelledby="experience-heading"
+    >
       <div className="experience-inner">
         <span className="section-label">Background</span>
         <h2 className="experience-heading" id="experience-heading">
@@ -74,7 +81,6 @@ const Experience = () => {
         </h2>
 
         <div className="experience-layout">
-
           {/* ── Work Experience ── */}
           <div className="exp-column">
             <div className="exp-column-header">
@@ -83,12 +89,19 @@ const Experience = () => {
             </div>
             <div className="timeline">
               {workExperience.map((job, i) => (
-                <div className="timeline-item" key={i} data-aos="fade-up" data-aos-duration="500">
+                <div
+                  className="timeline-item"
+                  key={i}
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
                   <div className="timeline-dot" aria-hidden="true" />
                   <div className="timeline-card">
                     <p className="timeline-period">{job.period}</p>
                     <h4 className="timeline-role">{job.role}</h4>
-                    <p className="timeline-company">{job.company} · {job.location}</p>
+                    <p className="timeline-company">
+                      {job.company} · {job.location}
+                    </p>
                     <ul className="timeline-points">
                       {job.points.map((pt, j) => (
                         <li key={j}>{pt}</li>
@@ -102,14 +115,18 @@ const Experience = () => {
 
           {/* ── Education + Certifications ── */}
           <div className="exp-column">
-
             <div className="exp-column-header">
               <FiBook aria-hidden="true" />
               <h3>Education</h3>
             </div>
             <div className="timeline">
               {education.map((edu, i) => (
-                <div className="timeline-item" key={i} data-aos="fade-up" data-aos-duration="500">
+                <div
+                  className="timeline-item"
+                  key={i}
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
                   <div className="timeline-dot" aria-hidden="true" />
                   <div className="timeline-card">
                     <p className="timeline-period">{edu.period}</p>
@@ -126,13 +143,17 @@ const Experience = () => {
             </div>
             <ul className="cert-list">
               {certifications.map((cert, i) => (
-                <li key={i} className="cert-item" data-aos="fade-up" data-aos-duration="500">
+                <li
+                  key={i}
+                  className="cert-item"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
                   <span className="cert-name">{cert.name}</span>
                   <span className="cert-issuer">{cert.issuer}</span>
                 </li>
               ))}
             </ul>
-
           </div>
         </div>
       </div>

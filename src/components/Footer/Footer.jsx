@@ -88,7 +88,7 @@ const Footer = () => {
           </nav>
 
           <p className="footer-copy">
-            © 2025 Peter Akasi MBA. All rights reserved.
+            © {new Date().getFullYear()} Peter Mba Akasi. All rights reserved.
           </p>
 
           <div className="footer-social">

@@ -9,16 +9,28 @@ const NavBar = () => {
     <header className="navbar" role="banner">
       <div className="navbar-inner">
         {/* Logo / brand */}
-        <a href="#about" className="navbar-logo" aria-label="Peter Akasi MBA — back to top">
+        <a
+          href="#about"
+          className="navbar-logo"
+          aria-label="Peter Mba Akasi — back to top"
+        >
           Peter.
         </a>
 
         {/* Desktop nav links */}
         <nav className="navbar-links" aria-label="Primary navigation">
-          <a href="#about"    className="navbar-link">About</a>
-          <a href="#skills"   className="navbar-link">Skills</a>
-          <a href="#projects" className="navbar-link">Projects</a>
-          <a href="#contact"  className="navbar-link">Contact</a>
+          <a href="#about" className="navbar-link">
+            About
+          </a>
+          <a href="#skills" className="navbar-link">
+            Skills
+          </a>
+          <a href="#projects" className="navbar-link">
+            Projects
+          </a>
+          <a href="#contact" className="navbar-link">
+            Contact
+          </a>
         </nav>
 
         {/* Desktop CTA */}
@@ -29,7 +41,9 @@ const NavBar = () => {
         {/* Mobile hamburger */}
         <button
           className={`navbar-hamburger${menuOpen ? " navbar-hamburger--open" : ""}`}
-          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={
+            menuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
           aria-expanded={menuOpen}
           aria-controls="mobile-nav"
           onClick={() => setMenuOpen((o) => !o)}
@@ -47,11 +61,23 @@ const NavBar = () => {
         aria-label="Mobile navigation"
         aria-hidden={!menuOpen}
       >
-        <a href="#about"    className="navbar-mobile-link" onClick={closeMenu}>About</a>
-        <a href="#skills"   className="navbar-mobile-link" onClick={closeMenu}>Skills</a>
-        <a href="#projects" className="navbar-mobile-link" onClick={closeMenu}>Projects</a>
-        <a href="#contact"  className="navbar-mobile-link" onClick={closeMenu}>Contact</a>
-        <a href="#contact"  className="btn btn-primary navbar-mobile-cta" onClick={closeMenu}>
+        <a href="#about" className="navbar-mobile-link" onClick={closeMenu}>
+          About
+        </a>
+        <a href="#skills" className="navbar-mobile-link" onClick={closeMenu}>
+          Skills
+        </a>
+        <a href="#projects" className="navbar-mobile-link" onClick={closeMenu}>
+          Projects
+        </a>
+        <a href="#contact" className="navbar-mobile-link" onClick={closeMenu}>
+          Contact
+        </a>
+        <a
+          href="#contact"
+          className="btn btn-primary navbar-mobile-cta"
+          onClick={closeMenu}
+        >
           Hire Me
         </a>
       </nav>

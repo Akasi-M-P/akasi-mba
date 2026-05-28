@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiTailwindcss, SiMongodb, SiExpress, SiMysql } from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiExpress, SiMysql, SiNextdotjs } from "react-icons/si";
 
 const skillGroups = [
   {
@@ -25,6 +25,7 @@ const skillGroups = [
     category: "Frontend",
     skills: [
       { Icon: FaReact, name: "React", color: "#61dafb" },
+      { Icon: SiNextdotjs, name: "Next.js", color: "#111111" },
       { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#38bdf8" },
     ],
   },

@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-inner">
         <span className="section-label">About Me</span>
         <h2 className="about-heading" id="about-heading">
-          Full-stack engineer. Cloud practitioner. Lifelong learner.
+          Full-stack web developer. Cloud practitioner. Lifelong learner.
         </h2>
 
         <div className="about-grid">
