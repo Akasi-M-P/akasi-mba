@@ -47,17 +47,17 @@
       "Tailwind CSS"
     ],
     "impact": "End-to-end commerce — from product browsing to order persistence with server-verified pricing",
-    "github": "https://github.com/your-username/ebuy",
+    "github": "https://github.com/Akasi-M-P/ebuy.git",
     "live": "https://ebuy-opal.vercel.app/"
   },
   {
     "id": 4,
-    "title": "GitHub User Finder",
-    "img": "/assets/gitHubUser.png",
-    "description": "A GitHub profile explorer that fetches user data and repositories in real time with a clean interface and instant search results.",
-    "techStack": ["React", "JavaScript", "GitHub API"],
-    "impact": "Live GitHub API integration with instant profile lookup",
-    "github": "https://github.com/Akasi-M-P/github-user",
-    "live": "https://github-user-amber.vercel.app/"
+    "title": "FreshSpin",
+    "img": "/assets/freshspin.jpg",
+    "description": "A responsive landing page for a premium laundry pickup and delivery service, featuring animated sections for services, tiered pricing, a 4-step process walkthrough, customer testimonials, an FAQ accordion, a postcode-based service area checker, and a validated booking/contact form with pickup scheduling.",
+    "techStack": ["HTML5", "CSS3", "JavaScript"],
+    "impact": "Conversion-focused single-page site — from trust-building social proof to a pre-filled booking form driven by pricing CTA clicks",
+    "github": "https://github.com/Akasi-M-P/freshspin.git",
+    "live": "https://freshspin-awin.vercel.app/"
   }
 ]
