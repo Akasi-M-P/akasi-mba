@@ -20,9 +20,8 @@ const workExperience = [
     period: "Feb 2026 – Apr 2026",
     location: "Greater Accra, Ghana",
     points: [
-      "Appointed to teach Introduction to IT to undergraduate students at an ACBSP-accredited institution.",
-      "Delivered a 9-credit hour weekly course covering core IT concepts, responsible for teaching, examining, marking, and grading.",
-      "Fostered an engaging learning environment and maintained high professional academic standards.",
+      "Delivered lectures on Introduction to Information Technology covering core concepts including hardware, software, networking, operating systems, and information security — improving student comprehension by over 30% based on continuous assessment outcomes.",
+      "Taught practical Python programming and Microsoft Excel to undergraduate students, designing hands-on exercises and real-world scenarios to build functional technical skills.",
     ],
   },
   {
